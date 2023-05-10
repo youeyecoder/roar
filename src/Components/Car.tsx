@@ -7,15 +7,15 @@ import IconButton from '@mui/joy/IconButton';
 import Typography from '@mui/joy/Typography';
 import BookmarkAdd from '@mui/icons-material/BookmarkAddOutlined';
 
-export const Bike = ({bike}) => {
+export const Car = ({car}) => {
   return (
     <Card variant="" sx={{ width: 320 }}>
       <Typography level="h2" fontSize="md" sx={{ mb: 0.5 }}>
-        {bike.title}
+        {car.title}
       </Typography>
-      <Typography level="body2">{bike.brand}</Typography>
+      <Typography level="body2">{car.brand}</Typography>
       <IconButton
-        aria-label={bike.subtitle}
+        aria-label={car.subtitle}
         variant="plain"
         color="neutral"
         size="sm"
@@ -25,16 +25,16 @@ export const Bike = ({bike}) => {
       </IconButton>
       <AspectRatio minHeight="120px" maxHeight="200px" sx={{ my: 2 }}>
         <img
-          src={'bikes/'+ bike.img}
+          src={'cars/'+ car.img}
           loading="lazy"
-          alt={bike.title}
+          alt={car.title}
         />
       </AspectRatio>
       <Box sx={{ display: 'flex' }}>
         <div>
           <Typography level="body3">Total price:</Typography>
           <Typography fontSize="sm" fontWeight="lg">
-            {bike.price}
+            {car.price}
           </Typography>
         </div>
         <Button
