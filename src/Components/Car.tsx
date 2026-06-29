@@ -11,7 +11,7 @@ export const Car = ({car}) => {
   return (
     <Card variant="" sx={{ width: 320 }}>
       <Typography level="h2" fontSize="md" sx={{ mb: 0.5 }}>
-        {car.title}
+        CAR: {car.title}
       </Typography>
       <Typography level="body2">{car.brand}</Typography>
       <IconButton
